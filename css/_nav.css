@@ -1,0 +1,82 @@
+
+/* might need to fix for resizing */
+.container {
+    width: 980px;
+    margin: 0 auto; 
+    background: inherit;
+}
+@media (max-width :1000px){
+    .container{
+        width: 100%;
+    }
+}
+
+.black-bg {
+    background: #292929;    
+    box-sizing: border-box;
+    border-bottom: 5px solid black;
+}
+nav{
+    background:inherit;
+    width: 100%;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 120px;
+}
+.ddBurger{
+    display: none;
+}
+
+nav > a {
+    text-decoration: none;
+    font-size: 3em;
+    align-self: center;
+    color: rgba(255, 255, 255, 255);
+    font-family: Eurofurenceregular, MyriadPro-Regular, AdobeInvisFont;
+}
+nav > a > span{
+    color: var(--navBorderColor); 
+}
+nav > ul{
+    display: flex;
+    flex-flow: row;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul  li{
+    list-style: none;
+    min-width:70px;
+    width: 120px;
+    font-size: 1.5em; 
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: transparent;      
+    height: 100%;
+    display: flex;
+    box-sizing: content-box;
+    transition: all 0.5s ease;
+
+}
+
+nav > ul  li a{
+    display: flex;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 255);
+    justify-content: center;
+    font-size: 0.9em;
+    font-family: AdobeInvisFont;
+    transition: all 0.5s ease;
+}
+nav > ul  li:hover a{
+    color: var(--navBorderColor);
+}
+nav > ul  li:hover{
+    border-bottom:5px solid var(--navBorderColor); 
+}
+.lastListItem{
+    border-right: 1px solid black;
+}

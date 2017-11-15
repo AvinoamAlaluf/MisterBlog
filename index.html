@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mister Bloger</title>
+    <link rel="stylesheet" href="lib/normalize.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' />
+</head>
+
+<body>
+    <div class="black-bg">
+        <nav class="container">
+            <a class="logo" href="#">Blogin
+                <span>.</span>
+            </a>
+            <div class="ddBurger" onclick="toggleMenu()">
+                <i class="fa fa-bars fa-3x" aria-hidden="true">
+                </i>
+            </div>
+            <ul class="hidden-collapsed">
+                <li>
+                    <a href="#">Jornal</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Work</a>
+                </li>
+                <li class="lastListItem">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <section class="articles">
+            <div class="article">
+                <div class="articleImg">
+                    <img src="img/articles/first.png">
+                </div>
+                <div class="details">
+                    <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    <a href="#popup1" class="continueReading">Continue Reading</a>
+                </div>
+
+            </div>
+
+            <div class="article">
+                <div>
+                    <img src="img/articles/second.png">
+                </div>
+                <div class="details">
+                    <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    <a href="#popup1" class="continueReading">Continue Reading</a>
+                </div>
+            </div>
+
+            <div class="article lastArticle">
+                <div>
+                    <img src="img/articles/third.png">
+                </div>
+                <div class="details">
+                    <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    <a href="#popup1" class="continueReading">Continue Reading</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container pageNav">
+        <h2 class="back">
+            <a href="#">⟵ Back</a>
+        </h2>
+        <h2 class="forward">
+            <a href="#">Forward ⟶</a>
+        </h2>
+    </div>
+    <footer class="footer">
+        <a class="logo" href="#">Blogin
+            <span>.</span>
+        </a>
+        <p>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</p>
+        <div class="icons">
+            <i class="fa fa-facebook-square fa-3x facebookI" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square fa-3x twitterI" aria-hidden="true"></i>
+            <i class="fa fa-behance-square fa-3x behanceI" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square fa-3x linkedinI" aria-hidden="true"></i>
+        </div>
+    </footer>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Join Us To Get Access To Our Greatest Stories!</h2>
+            <br/>
+            <div class="content">
+                <input type="text">
+                <div class="popUpButtons">
+                    <button>
+                        <a class="cancleButton" href="#">Cancle</a>
+                    </button>
+                    <button class="cancleButton"><a class="cancleButton" href="#">Submit</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
